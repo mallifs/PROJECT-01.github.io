@@ -10,8 +10,7 @@
     if (event.keyCode == 13){
         getResults(searchBox.value);
         searchBox.value = ""   
-    }
-   
+    } 
  }
 
  function getResults (query) {
