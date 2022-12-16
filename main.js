@@ -11,8 +11,7 @@
         getResults(searchBox.value);
         searchBox.value = ""   
     }
- 
-    
+   
  }
 
  function getResults (query) {
