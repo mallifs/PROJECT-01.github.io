@@ -43,7 +43,7 @@
 
      temp.addEventListener("click", () =>{
       temp.innerHTML = `${Math.floor(celsius)}<span>°C</span>`
-      // console.log("Hi")
+      
      })
 
      let weatherEl = document.querySelector('.current .weather');
