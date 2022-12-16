@@ -9,8 +9,7 @@
  function setQuery(event) {
     if (event.keyCode == 13){
         getResults(searchBox.value);
-        searchBox.value = ""
-         
+        searchBox.value = ""   
     }
  
     
