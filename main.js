@@ -38,7 +38,6 @@
      let temp = document.querySelector('.Temp');
      temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F </span>`;
 
-
      let celsius = (weather.main.temp - 32) * (5 / 9);
 
      temp.addEventListener("click", () =>{
