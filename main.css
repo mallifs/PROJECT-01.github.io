@@ -6,17 +6,23 @@
 
 body {
     font-family:sans-serif ;
-    background-image: url(pat-whelen-gtdsIafBdIU-unsplash.jpg);
-    /* background: linear-gradient(rgba(47,150,163),rgba(48,62,143)); */
     
  background-size:   cover;    
  background-position: 0rem;
-}        
+
+}    
+
+img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 .app-wrap {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient();
+    position: relative;
 }
 
 header {
