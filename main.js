@@ -9,8 +9,12 @@
  function setQuery(event) {
     if (event.keyCode == 13){
         getResults(searchBox.value);
+        searchBox.value = ""
          
     }
+ 
+    
+
  }
 
  function getResults (query) {
@@ -30,8 +34,16 @@
     date.innerText = dateBuilder(now);
 
 
-     let temp = document.querySelector('.current .Temp');
+     let temp = document.querySelector('.Temp');
      temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F </span>`;
+
+
+     let celsius = (weather.main.temp - 32) * (5 / 9);
+
+     temp.addEventListener("click", () =>{
+      temp.innerHTML = `${Math.floor(celsius)}<span>°C</span>`
+      // console.log("Hi")
+     })
 
      let weatherEl = document.querySelector('.current .weather');
      weatherEl.innerText = weather.weather[0].main;
