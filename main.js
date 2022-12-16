@@ -54,7 +54,6 @@
 
  }    
 
-
  function dateBuilder (d) {
     let months = ["January","February","March","April","May",
     "June","July","August","september",
