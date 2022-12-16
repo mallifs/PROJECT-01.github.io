@@ -5,7 +5,7 @@
 
  const searchBox = document.querySelector('.search-box');
  searchBox.addEventListener('keypress',setQuery);
-
+ const backgroundImg = document.querySelector("img")
  function setQuery(event) {
     if (event.keyCode == 13){
         getResults(searchBox.value);
@@ -22,6 +22,7 @@
     .then(weather => {
         return weather.json();
     }).then(displayResults);
+
  }
 
  function displayResults (weather) {
@@ -52,6 +53,8 @@
 
      let hiLow = document.querySelector('.hi-low');
      hiLow.innerText = `${Math.round(weather.main.temp_min)}°F / ${Math.round(weather.main.temp_max)}°F`;
+
+     backgroundImg.src = "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
 
     
  }    
