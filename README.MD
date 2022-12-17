@@ -6,7 +6,7 @@
 
 
 ##Instructions
-    Simple weather app that displays the current day month and year,also displays the temperature of the city in  Fahrenheit(°F) and also the Highs and Lows of the city in fahrenheit .
+    Simple weather app that displays the current day, month and year,also displays the temperature of the city in  Fahrenheit(°F) , on click on the temperature section the user can convert the temperature from fahrenheit to celsius and also the Highs and Lows of the city in fahrenheit .
 
     
 
@@ -15,7 +15,7 @@
 
 
 ##Technologies
-    ths app was build on pure HTML and javascript and style with css.
+    this app was build on pure HTML and javascript and style with css.
 
 
 ##License
